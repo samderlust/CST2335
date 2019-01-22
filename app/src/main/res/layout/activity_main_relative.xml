@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/widgetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp" android:layout_alignParentTop="true" android:id="@+id/textView2"
+            android:textSize="30dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp" android:id="@+id/button2"
+            android:layout_marginTop="14dp" android:layout_below="@+id/textView2"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/flag"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp" android:id="@+id/imageButton"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/textView2" android:layout_toEndOf="@+id/button2"
+            android:layout_marginStart="9dp"/>
+    <CheckBox
+            android:text="Check this out!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/checkBox"
+            android:layout_marginTop="73dp" android:layout_alignStart="@+id/button2"
+            android:layout_below="@+id/button2"/>
+    <Switch
+            android:text="@string/switchText"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content" android:layout_alignBottom="@+id/checkBox"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="52dp" android:id="@+id/switch1"
+            android:layout_toEndOf="@+id/checkBox" android:layout_marginStart="57dp" android:layout_marginBottom="0dp"
+            android:layout_marginTop="19dp" android:layout_below="@+id/imageButton"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="@string/hintText"
+            android:layout_alignParentTop="true" android:id="@+id/editText2" android:layout_marginTop="219dp"
+            android:layout_alignStart="@+id/textView2"/>
+</RelativeLayout>

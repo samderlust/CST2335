@@ -6,4 +6,5 @@
     <string name="checkboxText">Check this out!</string>
     <string name="switchText">Switch on / off</string>
     <string name="hintText">Type your answer here</string>
+    <string name="emailSaving"></string>
 </resources>

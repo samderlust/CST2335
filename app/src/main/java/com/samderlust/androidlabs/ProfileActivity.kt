@@ -2,7 +2,6 @@ package com.samderlust.androidlabs
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
 import android.view.View
 import kotlinx.android.synthetic.main.activity_profile.*
 import android.provider.MediaStore
@@ -18,7 +17,6 @@ class ProfileActivity : AppCompatActivity() {
 
     fun onTakePicture(v: View){
         dispatchTakePictureIntent()
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +24,7 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         val email  = intent.getStringExtra("email")
+        
         println(" EMAIL #########   " +email)
 
         profileEmailField.setText(email)

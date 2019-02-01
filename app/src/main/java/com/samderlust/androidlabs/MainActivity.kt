@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 class MainActivity : AppCompatActivity() {
 
     fun onLogin(v: View){
-        val profilePage = Intent(applicationContext, ProfileActivity::class.java)
+        val profilePage = Intent(this, ProfileActivity::class.java)
 
         profilePage.putExtra("email", emailInput.text.toString())
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val sharedPref = this.getPreferences(Context.MODE_PRIVATE) ?: return
-        val savedEmail = sharedPref.getString(getString(R.string.emailSaving), "")
+        val savedEmail = sharedPref.getString("emailSaved", "")
 
         emailInput.hint = savedEmail
 
@@ -36,8 +36,9 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         val sharedPref = this.getPreferences(Context.MODE_PRIVATE) ?: return
         with (sharedPref.edit()) {
-            putString(getString(R.string.emailSaving),emailInput.text.toString())
-            commit()
+            putString("emailSaved",emailInput.text.toString())
+//            commit()
+            apply()
         }
     }
 

@@ -3,4 +3,7 @@
     <string name="app_name">Android Labs</string>
     <string name="hello_message">Xin Chào</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="sendBtnText">Gửi</string>
+    <string name="receiveBtnText">Nhận</string>
+    <string name="toChatBtnText">Tới trang Chat</string>
 </resources>

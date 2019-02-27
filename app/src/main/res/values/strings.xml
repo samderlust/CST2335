@@ -6,4 +6,7 @@
     <string name="checkboxText">Check this out!</string>
     <string name="switchText">Switch on / off</string>
     <string name="hintText">Type your answer here</string>
+    <string name="sendBtnText">Send</string>
+    <string name="receiveBtnText">Receive</string>
+    <string name="toChatBtnText">Go to Chat</string>
 </resources>

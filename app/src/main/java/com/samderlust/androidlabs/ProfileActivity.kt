@@ -15,6 +15,11 @@ import android.graphics.Bitmap
 class ProfileActivity : AppCompatActivity() {
     val REQUEST_IMAGE_CAPTURE = 1
 
+    fun goToChat(v: View){
+       val chatRoom = Intent(applicationContext,ChatRoomActivity::class.java)
+        startActivity(chatRoom)
+    }
+
     fun onTakePicture(v: View){
         dispatchTakePictureIntent()
     }

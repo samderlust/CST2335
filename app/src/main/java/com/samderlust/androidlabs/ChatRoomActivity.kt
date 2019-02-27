@@ -115,7 +115,7 @@ class ChatRoomActivity : AppCompatActivity() {
         chatAdapter = ChatAdapter(this, chatList)
 
         chatListView.adapter = chatAdapter
-//        printCursor(result)
+        printCursor(result)
 
     }
 

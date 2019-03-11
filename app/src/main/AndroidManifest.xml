@@ -13,6 +13,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".TestToolbar"
+                  android:theme="@style/ToolBar"
+        >
+        </activity>
         <activity android:name=".ChatRoomActivity">
         </activity>
         <activity android:name=".ProfileActivity">

@@ -32,6 +32,7 @@ class ChatRoomActivity : AppCompatActivity() {
         newRow.put(MessagesDB.SENDER, message.isSend)
 
         val newId = db.insert(MessagesDB.TABLE_NAME, null, newRow)
+//        db.update()
 
 //        chatListView.adapter = chatAdapter
         chatAdapter.notifyDataSetChanged()

@@ -16,7 +16,14 @@ class MainActivity : AppCompatActivity() {
         profilePage.putExtra("email", emailInput.text.toString())
 
         startActivity(profilePage)
+    }
 
+    fun gotoToolbar(v: View){
+        val toolbarTest = Intent(this, TestToolbar::class.java)
+
+        toolbarTest.putExtra("a", 1)
+
+        startActivity(toolbarTest)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

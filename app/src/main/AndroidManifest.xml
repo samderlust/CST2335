@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.samderlust.androidlabs">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <uses-feature
             android:name="android.hardware.camera"
             android:required="true"/>
@@ -13,9 +15,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".TestToolbar"
-                  android:theme="@style/ToolBar"
-        >
+        <activity android:name=".WeatherForecast">
+        </activity>
+        <activity
+                android:name=".TestToolbar"
+                android:theme="@style/ToolBar">
         </activity>
         <activity android:name=".ChatRoomActivity">
         </activity>

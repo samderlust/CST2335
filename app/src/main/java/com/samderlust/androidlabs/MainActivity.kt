@@ -26,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(toolbarTest)
     }
 
+    fun toWeather(v: View){
+        val wIntent = Intent(this, WeatherForecast::class.java)
+
+        startActivity(wIntent)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
